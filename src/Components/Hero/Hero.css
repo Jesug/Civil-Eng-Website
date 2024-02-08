@@ -13,6 +13,7 @@
 /* left side */
 .hero-left {
     gap: 3rem;
+
 }
 
 .hero-title {
@@ -22,8 +23,12 @@
 
 .hero-title h1 {
     font-weight: 600;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     line-height: 4rem;
+}
+
+.hero-des .secondaryText {
+    color: #8c8b8b;
 }
 
 .orange-circle {
@@ -32,23 +37,19 @@
     background: var(--orange-gradient);
     border-radius: 999px;
     position: absolute;
-    right: 28%;
-    top: -10%;
+    right: 50%;
+    top: 20%;
     z-index: -1;
 }
 
-.search-bar {
-    background: white;
-    border-radius: 5px;
-    border: 3px solid rgba(120, 120, 120, 0.374);
-    padding: 0.5rem 1rem;
-    justify-content: space-between;
-    width: 100%;
+.animated-typing {
+    color: goldenrod;
+    width: 500px;
 }
 
-.search-bar> input {
-    border: none;
-    outline: none;
+.hero-button .button {
+    padding: 0.7rem 3rem;
+    font-size: 18px;
 }
 
 .stats {
@@ -61,7 +62,7 @@
 }
 
 .stat>:nth-child(1)>:last-child {
-    color: orange;
+    color: goldenrod;
 }
 
 
@@ -111,10 +112,22 @@
     .stat>:nth-child(2) {
         font-size: 0.8rem;
     }
+
+    .animated-typing {
+        width: auto;
+    }
 }
 
 @media (max-width: 400px) {
     .search-bar {
         padding: 0;
+    }
+
+    .hero-des .secondaryText {
+        width: 250px;
+    }
+
+    .animated-typing {
+        font-size: 2.4rem;
     }
 }

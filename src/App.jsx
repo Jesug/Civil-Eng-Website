@@ -6,6 +6,7 @@ import GetStarted from './Components/GetStarted/GetStarted';
 import Header from './Components/Header/Header'
 import Hero from './Components/Hero/Hero';
 import Residencies from './Components/Residencies/Residencies';
+import Services from './Components/Services/Services';
 import Value from './Components/Value/Value';
 
 
@@ -18,8 +19,9 @@ function App() {
         <Hero />
       </div>
       <Companies />
-     <Residencies />
       <Value />
+      <Services />
+      <Residencies />
       <Contact />
       <GetStarted />
       <Footer />

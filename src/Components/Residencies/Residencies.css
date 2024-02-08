@@ -1,6 +1,7 @@
 .r-container {
     overflow: hidden;
     position: relative;
+    border: 2px solid rgba(235, 240, 243, 0.93);
 }
 
 .r-head {
@@ -11,14 +12,17 @@
     gap: 0.6rem;
     padding: 1rem;
     border-radius: 10px;
+    width: 250px;
     max-width: max-content;
     margin: auto;
     transition: all 300ms ease-in;
 }
 
 .r-card>img {
+    border-radius: 15px;
     width: 100%;
     max-width: 15rem;
+    height: 150px;
 }
 
 .r-card>:nth-child(2) {
@@ -40,6 +44,10 @@
     cursor: pointer;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0), 0%, rgba(136, 160, 255, 0.46) 217.91%);
     box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+}
+
+.r-card .primaryText {
+    color: black;
 }
 
 .Swiper-horizontal {
@@ -75,5 +83,12 @@
 
     .r-buttons {
         position: initial;
+    }
+}
+
+@media (max-width: 400px) {
+    .r-head .primaryText {
+        align-items: center;
+        font-size: 1.4rem;
     }
 }

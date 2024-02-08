@@ -7,11 +7,11 @@ import { sliderSettings } from '../../utils/common'
 
 const Residencies = () => {
   return (
-    <section className="r-wrapper">
+    <section id='projects' className="r-wrapper">
         <div className="paddings innerWidth r-container">
             <div className="r-head flexColStart">
-                <span className='orangeText'>Best Choices</span>
-                <span className='primaryText'>Popular Residencies</span>
+                <span className='orangeText'>Our Projects</span>
+                <span className='primaryText'>From Concept to Creation</span>
             </div>
 
             <Swiper {...sliderSettings}>
@@ -20,15 +20,9 @@ const Residencies = () => {
                    data.map((card, i)=>(
                         <SwiperSlide key={i}>
                             <div className="flexColStart r-card">
-                                <img src={card.image} alt="home" />
-
-                                <span className='secondaryText r-price'>
-                                    <span style={{color:"orange"}}>$</span>
-                                    <span>{card.price}</span>
-                                </span>
-
+                                
+                                <img src={card.image} alt="projects"/>
                                 <span className='primaryText'>{card.name}</span>
-                                <span className='secondaryText'>{card.detail}</span>
                             </div>
                         </SwiperSlide>
                    )) 

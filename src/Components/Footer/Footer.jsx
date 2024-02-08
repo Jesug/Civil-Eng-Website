@@ -1,6 +1,12 @@
 import React from 'react'
 import './Footer.css'
-import footerLogo from '../../Assets/logo2.png'
+import footerLogo from '../../Assets/Cvelogo.png'
+import bull from '../../Assets/bull.png'
+import excav from '../../Assets/excav.png'
+import grade from '../../Assets/grade.png'
+import load from '../../Assets/load.png'
+import vib from '../../Assets/vib.png'
+import mix from '../../Assets/mix.png'
 
 const Footer = () => {
   return (
@@ -8,24 +14,23 @@ const Footer = () => {
         <div className="paddings innerWidth flexCenter f-container">
 
             {/* left side*/}
-            <div className="flexColStart f-left">
-                <img src={footerLogo} alt="" width={120}/>
+            <div className="flexColCenter f-left">
+                <img src={footerLogo} alt="logo" width={150}/>
 
-                <span className='secondaryText'>
-                    Our Vision is to make all people <br/> the best place to live for them
+                <span className='secondaryText slogan'>
+                 From Blueprint to Reality, We Build Success
                 </span>
             </div>
 
             {/* right side*/}
             <div className="flexColStart f-right">
-                <span className='primaryText'>Information</span>
-                <span>145 New York, FL 4571, USA</span>
-
                 <div className="flexCenter f-menu">
-                    <span>Property</span>
-                    <span>Services</span>
-                    <span>Product</span>
-                    <span>About Us</span>
+                    <span><img className='motion' src={bull} alt="bull" width={30} /></span>
+                    <span><img className='motion' src={excav} alt="excav"  width={30} /></span>
+                    <span><img className='motion' src={grade} alt="grade"  width={30} /></span>
+                    <span><img className='motion' src={load} alt="load"  width={30} /></span>
+                    <span><img className='motion' src={vib} alt="vib"  width={30} /></span>
+                    <span><img className='motion' src={mix} alt="mix"  width={30} /></span>
                 </div>
             </div>
         </div>

@@ -6,10 +6,38 @@
     gap: 1rem;
 }
 
+.slogan {
+    font-size: 20px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: 1px #554ae7;
+    color: transparent;
+    background-image: linear-gradient(#554ae7, #554ae7);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -530px 0;
+    animation: backColor 5s linear infinite alternate;
+}
+
+@keyframes backColor {
+    100% {
+        background-position: 0 0;
+    }
+}
+
 .f-menu {
     gap: 1.5rem;
     margin-top: 1.5rem;
     font-weight: 500;
+}
+
+.motion {
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media (max-width: 768px) {

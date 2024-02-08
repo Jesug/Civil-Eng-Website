@@ -14,6 +14,30 @@
     gap: 2rem;
 }
 
+.h-menu a:nth-child(2):hover {
+    border: 1px solid transparent;
+    border-color: orange;
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.h-menu a:nth-child(3):hover {
+    border: 1px solid transparent;
+    border-color: orange;
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.h-menu a:nth-child(4):hover {
+    border: 1px solid transparent;
+    border-color: orange;
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .h-menu>*:hover {
     cursor: pointer;
 }

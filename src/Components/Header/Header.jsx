@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css'
-import logo from '../../Assets/logo.png'
+import logo from '../../Assets/Cvelogo.png'
 import {BiMenuAltRight} from 'react-icons/bi'
 import OutsideCLickHandler from 'react-outside-click-handler';
 
@@ -17,7 +17,7 @@ const Header = () => {
     <section className="h-wrapper">
         <div className="flexCenter paddings innerWidth h-container">
 
-            <img src={logo} alt="logo" width={100} />
+            <img src={logo} alt="logo" width={120} />
 
             <OutsideCLickHandler 
               onOutsideClick={()=>{
@@ -27,13 +27,13 @@ const Header = () => {
               <div className="flexCenter h-menu"
                 style={getMenuStyles(menuOpened)}
                 >
-                <a href="">Residencies</a>
-                <a href="">Our Value</a>
-                <a href="">Contact Us</a>
-                <a href="">Get Started</a>
+                <a href="#">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
 
                 <button className='button'>
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </button>
                 
               </div>

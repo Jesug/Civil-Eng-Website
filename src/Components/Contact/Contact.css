@@ -1,12 +1,12 @@
-.c-container {
+.con-container {
     justify-content: space-between;
 }
 
-.c-container>div {
+.con-container>div {
     flex: 1;
 }
 
-.c-right .image-container{
+.c-right .image-contain{
     width: 100%;
 }
 
@@ -47,8 +47,18 @@
 
 .mode .detail .primaryText {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 600; 
 }
+
+.mode .detail .primaryText {
+    font-size: 1.1rem;
+    font-weight: 600; 
+}
+
+.mode .detail span {
+    overflow: hidden;
+}
+
 
 .mode:hover {
     scale: 1.1;
@@ -61,8 +71,19 @@
     scale: 0.8;
 }
 
+.mode:last-child {
+    width: 100%;
+}
+
+.image-contain img {
+    margin-top: 20px;
+    width: 80%;
+}
+
+
+
 @media (max-width: 1024px) {
-    .c-container {
+    .con-container {
         flex-direction: column;
     }
 
@@ -81,6 +102,20 @@
 
     .mode {
         width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .image-contain img {
+        width: 100%;
+    }
+
+    .mode .detail .secondaryText {
+        font-size: 0.8rem;
+    }
+
+    .contactModes {
+        width: 97%;
     }
 }
 
